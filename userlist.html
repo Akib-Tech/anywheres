@@ -1,0 +1,343 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Patient List
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="w-64 bg-white shadow-md">
+    <div class="flex items-center justify-center h-16 border-b">
+     <img alt="Logo" class="h-10 w-10" src="https://placehold.co/40x40"/>
+     <span class="ml-2 text-lg font-semibold">
+      Anywhere Healings
+     </span>
+    </div>
+    <nav class="mt-10">
+     <a class="flex items-center px-6 py-2 text-gray-700 hover:bg-gray-200" href="#">
+      <i class="fas fa-list-ul">
+      </i>
+      <span class="ml-3">
+       Patient List
+      </span>
+     </a>
+     <a class="flex items-center px-6 py-2 mt-2 text-gray-700 hover:bg-gray-200" href="#">
+      <i class="fas fa-bell">
+      </i>
+      <span class="ml-3">
+       Notifications
+      </span>
+     </a>
+    </nav>
+    <div class="absolute bottom-0 w-full">
+     <a class="flex items-center px-6 py-2 text-gray-700 hover:bg-gray-200" href="#">
+      <i class="fas fa-sign-out-alt">
+      </i>
+      <span class="ml-3">
+       Logout
+      </span>
+     </a>
+     <a class="flex items-center px-6 py-2 text-gray-700 hover:bg-gray-200" href="#">
+      <i class="fas fa-moon">
+      </i>
+      <span class="ml-3">
+       Light mode
+      </span>
+     </a>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="flex justify-between items-center mb-6">
+     <h1 class="text-2xl font-semibold">
+      Patient List
+     </h1>
+     <div class="flex items-center">
+      <input class="px-4 py-2 border rounded-md" placeholder="Search" type="text"/>
+      <img alt="User Avatar" class="ml-4 h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <table class="min-w-full bg-white">
+      <thead>
+        <tr>
+        <th class="py-2 px-4 border-b">
+         Patient Details
+        </th>
+        <th class="py-2 px-4 border-b">
+         Last Seen Date
+        </th>
+        <th class="py-2 px-4 border-b">
+         Symptom
+        </th>
+        <th class="py-2 px-4 border-b">
+         Status
+        </th>
+        <th class="py-2 px-4 border-b">
+         Actions
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        
+        <td class="py-2 px-4 border-b flex items-center">
+         <img alt="Patient Image" class="h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+         <div class="ml-4">
+          <div class="text-sm font-semibold">
+           Kristin Watson
+          </div>
+          <div class="text-sm text-gray-500">
+           kristin.watson@example.com
+          </div>
+         </div>
+        </td>
+        <td class="py-2 px-4 border-b">
+         Dec 18, 2024
+        </td>
+        <td class="py-2 px-4 border-b">
+         Geriatrician
+        </td>
+        <td class="py-2 px-4 border-b text-green-500">
+         Confirmed
+        </td>
+        <td class="py-2 px-4 border-b text-center">
+         <i class="fas fa-ellipsis-h">
+         </i>
+        </td>
+        
+       </tr>
+       <tr>
+        
+        <td class="py-2 px-4 border-b flex items-center">
+         <img alt="Patient Image" class="h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+         <div class="ml-4">
+          <div class="text-sm font-semibold">
+           Jacob Jones
+          </div>
+          <div class="text-sm text-gray-500">
+           jacob.jones@example.com
+          </div>
+         </div>
+        </td>
+        <td class="py-2 px-4 border-b">
+         Dec 18, 2024
+        </td>
+        <td class="py-2 px-4 border-b">
+         Internist
+        </td>
+        <td class="py-2 px-4 border-b text-green-500">
+         Confirmed
+        </td>
+        <td class="py-2 px-4 border-b text-center">
+         <i class="fas fa-ellipsis-h">
+         </i>
+        </td>
+        
+       </tr>
+       <tr>
+        
+        <td class="py-2 px-4 border-b flex items-center">
+         <img alt="Patient Image" class="h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+         <div class="ml-4">
+          <div class="text-sm font-semibold">
+           Leslie Alexander
+          </div>
+          <div class="text-sm text-gray-500">
+           leslie.alexander@example.com
+          </div>
+         </div>
+        </td>
+        <td class="py-2 px-4 border-b">
+         Dec 18, 2024
+        </td>
+        <td class="py-2 px-4 border-b">
+         Cardiologist
+        </td>
+        <td class="py-2 px-4 border-b text-green-500">
+         Confirmed
+        </td>
+        <td class="py-2 px-4 border-b text-center">
+         <i class="fas fa-ellipsis-h">
+         </i>
+        </td>
+        
+       </tr>
+       <tr>
+        
+        <td class="py-2 px-4 border-b flex items-center">
+         <img alt="Patient Image" class="h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+         <div class="ml-4">
+          <div class="text-sm font-semibold">
+           Arlene McCoy
+          </div>
+          <div class="text-sm text-gray-500">
+           arlene.mccoy@example.com
+          </div>
+         </div>
+        </td>
+        <td class="py-2 px-4 border-b">
+         Dec 18, 2024
+        </td>
+        <td class="py-2 px-4 border-b">
+         Urogynecologist
+        </td>
+        <td class="py-2 px-4 border-b text-green-500">
+         Confirmed
+        </td>
+        <td class="py-2 px-4 border-b text-center">
+         <i class="fas fa-ellipsis-h">
+         </i>
+        </td>
+        
+       </tr>
+        <tr>
+        <td class="py-2 px-4 border-b flex items-center">
+         <img alt="Patient Image" class="h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+         <div class="ml-4">
+          <div class="text-sm font-semibold">
+           Darrell Steward
+          </div>
+          <div class="text-sm text-gray-500">
+           darrell.steward@example.com
+          </div>
+         </div>
+        </td>
+        <td class="py-2 px-4 border-b">
+         Dec 18, 2024
+        </td>
+        <td class="py-2 px-4 border-b">
+         Geriatrician
+        </td>
+        <td class="py-2 px-4 border-b text-green-500">
+         Confirmed
+        </td>
+        <td class="py-2 px-4 border-b text-center">
+         <i class="fas fa-ellipsis-h">
+         </i>
+        </td>
+        
+       </tr>
+        <tr>
+        <td class="py-2 px-4 border-b flex items-center">
+         <img alt="Patient Image" class="h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+         <div class="ml-4">
+          <div class="text-sm font-semibold">
+           Albert Flores
+          </div>
+          <div class="text-sm text-gray-500">
+           albert.flores@example.com
+          </div>
+         </div>
+        </td>
+        <td class="py-2 px-4 border-b">
+         Dec 18, 2024
+        </td>
+        <td class="py-2 px-4 border-b">
+         Urogynecologist
+        </td>
+        <td class="py-2 px-4 border-b text-green-500">
+         Confirmed
+        </td>
+        <td class="py-2 px-4 border-b text-center">
+         <i class="fas fa-ellipsis-h">
+         </i>
+        </td>
+        
+       </tr>
+       <tr>
+        
+        <td class="py-2 px-4 border-b flex items-center">
+         <img alt="Patient Image" class="h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+         <div class="ml-4">
+          <div class="text-sm font-semibold">
+           Wade Warren
+          </div>
+          <div class="text-sm text-gray-500">
+           wade.warren@example.com
+          </div>
+         </div>
+        </td>
+        <td class="py-2 px-4 border-b">
+         Dec 18, 2024
+        </td>
+        <td class="py-2 px-4 border-b">
+         Internist
+        </td>
+        <td class="py-2 px-4 border-b text-green-500">
+         Confirmed
+        </td>
+        <td class="py-2 px-4 border-b text-center">
+         <i class="fas fa-ellipsis-h">
+         </i>
+        </td>
+        
+       </tr>
+       <tr>
+        
+        <td class="py-2 px-4 border-b flex items-center">
+         <img alt="Patient Image" class="h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+         <div class="ml-4">
+          <div class="text-sm font-semibold">
+           Annette Black
+          </div>
+          <div class="text-sm text-gray-500">
+           annette.black@example.com
+          </div>
+         </div>
+        </td>
+        <td class="py-2 px-4 border-b">
+         Dec 18, 2024
+        </td>
+        <td class="py-2 px-4 border-b">
+         Urogynecologist
+        </td>
+        <td class="py-2 px-4 border-b text-green-500">
+         Confirmed
+        </td>
+        <td class="py-2 px-4 border-b text-center">
+         <i class="fas fa-ellipsis-h">
+         </i>
+        </td>
+        
+       </tr>
+      </tbody>
+     </table>
+     <div class="flex justify-between items-center p-4">
+      <button class="px-4 py-2 border rounded-md">
+       <i class="fas fa-chevron-left">
+       </i>
+      </button>
+      <div class="flex space-x-2">
+       <button class="px-4 py-2 border rounded-md">
+        1
+       </button>
+       <button class="px-4 py-2 border rounded-md">
+        2
+       </button>
+       <button class="px-4 py-2 border rounded-md">
+        3
+       </button>
+       <button class="px-4 py-2 border rounded-md">
+        ...
+       </button>
+       <button class="px-4 py-2 border rounded-md">
+        10
+       </button>
+      </div>
+      <button class="px-4 py-2 border rounded-md">
+       <i class="fas fa-chevron-right">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
